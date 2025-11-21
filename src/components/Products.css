@@ -1,0 +1,55 @@
+/*
+ * ===============================================
+ *  Styles for the Products Page (products.php)
+ * ===============================================
+ */
+
+/* 
+  The container that wraps the image.
+  Its job is to maintain a consistent shape in the grid.
+*/
+.product-image-container {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  /* Maintains a uniform 4:3 rectangle shape */
+  background-color: #f8f9fa;
+  /* A clean, light background for letterboxing */
+  padding: 1rem;
+  /* Adds some internal spacing for a softer look */
+  border-radius: var(--bs-card-inner-border-radius);
+  /* Matches the card's rounded corners */
+}
+
+/* 
+  The actual image element.
+*/
+.product-image-container img {
+  width: 100%;
+  height: 100%;
+
+  /* 
+      --- THIS IS THE CRITICAL CHANGE ---
+      'contain' ensures the entire image fits inside the container.
+      It will never be cropped.
+    */
+  object-fit: contain;
+
+  transition: transform 0.4s ease;
+  /* Smooth transition for the zoom effect */
+}
+
+/* 
+  The zoom effect on hover remains the same, but now it zooms the contained image.
+*/
+.product-card:hover .product-image-container img {
+  transform: scale(1.08);
+  /* Slightly increased zoom for more impact */
+}
+
+/* 
+  A more pronounced shadow on the card itself to complement the zoom.
+*/
+.product-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+}

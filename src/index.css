@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color: #0d6efd;
+  --primary-dark: #0a58ca;
+  --secondary-color: #6c757d;
+  --dark-color: #212529;
+  --light-color: #f8f9fa;
+  --text-color: #333;
+  --bs-body-bg: #f8f9fa;
+  --bs-card-inner-border-radius: 12px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  background-color: var(--bs-body-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: var(--dark-color);
+  letter-spacing: -0.02em;
+}
+
+/* Navbar */
+/* Navbar */
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--dark-color) !important;
+  position: relative;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+  /* background handled in component */
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  /* Increased height for impact */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-subtitle {
+  font-family: 'Noto Sans Tamil', sans-serif;
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+/* Feature Icons */
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  background: white;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 25px rgba(13, 110, 253, 0.15);
+}
+
+.feature-icon:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(13, 110, 253, 0.3);
+}
+
+/* Product Cards - Global Styles */
+.product-card {
+  border: none;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  background: white;
+}
+
+/* Brand Logos */
+.brand-logo {
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+.brand-logo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.brand-logo img {
+  max-height: 80px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* WhatsApp Section */
+#whatsapp {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  color: #25D366;
+  padding: 14px 35px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-button:hover {
+  background: #f8f9fa;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  color: #128C7E;
+}
+
+/* Instagram Section */
+#instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+}
+
+.insta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  color: #cc2366;
+  padding: 14px 35px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.insta-button:hover {
+  background: #f8f9fa;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  color: #bc1888;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1d20;
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 4rem;
+}
+
+footer h5 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: white;
+}
