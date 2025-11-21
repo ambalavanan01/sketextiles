@@ -22,9 +22,11 @@ const Footer = () => {
                     <div className="col-lg-3 col-md-6">
                         <h5 className="mb-3">Contact Us</h5>
                         <ul className="list-unstyled text-white-50">
-                            <li className="mb-2">123 Textile Street, Erode</li>
-                            <li className="mb-2">+91 98765 43210</li>
-                            <li className="mb-2">info@sketextiles.com</li>
+                            <li className="mb-2">Thiruvalam, Tamil Nadu - 632515</li>
+                            <li className="mb-2">(+91) 79045-65456</li>
+                            <li className="mb-2">(+91) 96292-18964</li>
+                            <li className="mb-2">(+91) 88077-08964</li>
+                            <li className="mb-2">sketextilesreadymades@gmail.com</li>
                         </ul>
                     </div>
                     <div className="col-lg-3 col-md-6">

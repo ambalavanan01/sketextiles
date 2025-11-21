@@ -14,7 +14,7 @@ const Navigation = () => {
     >
       <Container>
         <Navbar.Brand as={Link} to="/" className="fw-bold text-dark">
-          <span className="text-primary">SKE</span> Textiles
+          <span className="text-primary">SKE</span> Textiles and Readymades
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarNav" />
         <Navbar.Collapse id="navbarNav">
